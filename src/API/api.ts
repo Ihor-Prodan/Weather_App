@@ -107,7 +107,7 @@ export const fetchForecast = async (
             .concat(sortedDates.slice(0, nextDayIndex))
         : sortedDates;
 
-    return rearrangedDates.slice(0, 6).map((isoDate) => {
+    return rearrangedDates.slice(0, 5).map((isoDate) => {
       const data = groupedForecasts[isoDate];
       const averageTemp =
         data.reduce((sum, item) => sum + item.temp, 0) / data.length;

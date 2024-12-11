@@ -204,11 +204,16 @@
           userCoords.value = { lat: latitude, lon: longitude };
           await updateWeatherByCoords(latitude, longitude);
         },
-        (error) => {
+        async (error) => {
           console.error('Error getting user location:', error);
-          alert(
-            'Could not retrieve location. Please enable location services.'
+
+          showModal(
+            String(translateStore.getTranslation('error')),
+            String(translateStore.getTranslation('locationPermissionDenied'))
           );
+
+          const defaultCity = 'Bratislava';
+          await updateWeatherByCity(defaultCity);
         },
         {
           enableHighAccuracy: true,
@@ -216,6 +221,9 @@
       );
     } else {
       console.error('Geolocation is not supported by this browser.');
+
+      const defaultCity = 'Bratislava';
+      await updateWeatherByCity(defaultCity);
     }
   }
 
@@ -353,5 +361,61 @@
     font-size: 1.4rem;
     color: #555;
     margin-top: 3.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .weather-app {
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .weather-container-section {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .search-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .weather-right-section {
+      min-height: auto;
+    }
+
+    .chart-container {
+      height: 300px;
+    }
+
+    .no-favorites {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 1250px) and (min-width: 721px) {
+    .weather-app {
+      padding: 15px;
+      gap: 15px;
+    }
+
+    .weather-container-section {
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .search-section {
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .chart-container {
+      height: 400px;
+    }
+
+    .no-favorites {
+      font-size: 1.3rem;
+    }
   }
 </style>

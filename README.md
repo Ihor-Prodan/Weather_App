@@ -1,39 +1,43 @@
-# WeatherApp
+# Weather App
 
-This template should help get you started developing with Vue 3 in Vite.
+## [DEMO]([https://ihor-prodan.github.io/Weather_App/])
 
-## Recommended IDE Setup
+## Overview
+The **Weather App** is a dynamic web application designed to provide users with up-to-date weather information in an intuitive and visually appealing manner. This project offers real-time weather updates, a detailed forecast, and support for multiple cities. The primary goal of this project is to deliver an engaging user experience with high performance and responsiveness across all devices.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Usage Instructions
+Here’s how you can use the Weather App:
 
-## Type Support for `.vue` Imports in TS
+1. **Search for Weather Information:**
+   - Enter a city name in the search bar to view its current weather details and forecast.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+2. **Save Favorite Cities:**
+   - Mark cities as favorites for quick access to their weather updates.
 
-## Customize configuration
+3. **Browse Forecast:**
+   - View a detailed forecast for the next few days, including temperature, wind speed, humidity, and precipitation.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+4. **Switch Languages:**
+   - Select your preferred language for the app interface.
 
-## Project Setup
+## Configuration
+The Weather App project is highly customizable with the following options:
 
-```sh
-npm install
-```
+- **API Configuration:**
+  Set your weather API key and endpoint in the configuration file to fetch data from your preferred weather service.
 
-### Compile and Hot-Reload for Development
+- **Language Support:**
+  Add or modify translations for additional languages to enhance accessibility for a global audience.
 
-```sh
-npm run dev
-```
+## Technologies Used
+- **HTML:** Markup language for building the app’s structure.
+- **CSS:** CSS for efficient and organized styling.
+- **Vue 3:** A progressive JavaScript framework for building user interfaces.
+- **Pinia:** State management library for managing the application state efficiently.
+- **Vue Router:** Official router for Vue.js, enabling navigation and dynamic routing.
+- **Axios:** HTTP client for making API requests.
+- **TypeScript:** Superset of JavaScript that provides static typing for improved code quality.
+- **Chart.js:** Library for creating responsive and interactive charts, used for weather data visualization.
+- **Swiper:** Library for implementing responsive sliders and carousels.
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+This project is developed with modern web technologies and best practices, ensuring a reliable and enjoyable user experience for accessing weather information.

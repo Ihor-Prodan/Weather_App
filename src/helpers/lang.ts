@@ -21,6 +21,8 @@ export const translations: Translations = {
     id: 'en',
     properties: {
       temperature: 'Temperature',
+      locationPermissionDenied:
+        'Could not retrieve location. Showing weather for the default city.',
       description: 'Description',
       humidity: 'Humidity',
       windSpeed: 'Wind Speed',
@@ -45,6 +47,8 @@ export const translations: Translations = {
     id: 'ua',
     properties: {
       temperature: 'Температура',
+      locationPermissionDenied:
+        'Не вдалося отримати місцезнаходження. Показується погода для міста за замовчуванням.',
       description: 'Опис',
       humidity: 'Вологість',
       windSpeed: 'Швидкість вітру',
@@ -69,6 +73,8 @@ export const translations: Translations = {
     id: 'sk',
     properties: {
       temperature: 'Teplota',
+      locationPermissionDenied:
+        'Nepodarilo sa získať polohu. Zobrazuje sa počasie pre predvolené mesto.',
       description: 'Popis',
       humidity: 'Vlhkosť',
       windSpeed: 'Rýchlosť vetra',
@@ -93,6 +99,8 @@ export const translations: Translations = {
     id: 'de',
     properties: {
       temperature: 'Temperatur',
+      locationPermissionDenied:
+        'Standort konnte nicht abgerufen werden. Es wird das Wetter für die Standardstadt angezeigt.',
       description: 'Beschreibung',
       humidity: 'Luftfeuchtigkeit',
       windSpeed: 'Windgeschwindigkeit',

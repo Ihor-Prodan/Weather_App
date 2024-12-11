@@ -175,4 +175,80 @@
     text-align: left;
     font-size: 0.9rem;
   }
+
+  @media (max-width: 720px) {
+    .main-weather-card,
+    .main-weather-card-loader {
+      padding: 15px;
+      min-width: 280px;
+      border-radius: 12px;
+    }
+
+    .location h2 {
+      font-size: 1.2rem;
+    }
+
+    .location p {
+      font-size: 0.8rem;
+    }
+
+    .current-weather img {
+      min-width: 60px;
+      min-height: 60px;
+    }
+
+    .current-weather h1 {
+      font-size: 1.3rem;
+    }
+
+    .weather-details {
+      margin-bottom: 20px;
+    }
+
+    .weather-stats {
+      font-size: 0.8rem;
+    }
+
+    .sun-times {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 1250px) and (min-width: 721px) {
+    .main-weather-card,
+    .main-weather-card-loader {
+      padding: 20px;
+      min-width: 300px;
+      border-radius: 14px;
+    }
+
+    .location h2 {
+      font-size: 1.4rem;
+    }
+
+    .location p {
+      font-size: 0.85rem;
+    }
+
+    .current-weather img {
+      min-width: 70px;
+      min-height: 70px;
+    }
+
+    .current-weather h1 {
+      font-size: 1.4rem;
+    }
+
+    .weather-details {
+      margin-bottom: 30px;
+    }
+
+    .weather-stats {
+      font-size: 0.85rem;
+    }
+
+    .sun-times {
+      font-size: 0.85rem;
+    }
+  }
 </style>

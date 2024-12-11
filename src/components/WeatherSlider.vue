@@ -39,12 +39,13 @@
 
     <swiper
       :slides-per-view="2"
-      :slides-per-group="2"
+      :slides-per-group="1"
       :speed="700"
       :space-between="20"
       :breakpoints="{
+        320: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
+        1250: { slidesPerView: 3 },
       }"
       @swiper="onSwiperInit"
     >

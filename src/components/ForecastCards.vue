@@ -68,4 +68,46 @@
   .forecast-card p {
     margin: 5px 0;
   }
+
+  @media (max-width: 720px) {
+    .forecast-cards {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .forecast-card {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      min-width: 100px;
+      min-height: 180px;
+      padding: 25px;
+      font-size: 1.9rem;
+      border-radius: 60px;
+    }
+
+    .forecast-card img {
+      min-width: 80px;
+      min-height: 80px;
+    }
+  }
+
+  @media (max-width: 1250px) and (min-width: 721px) {
+    .forecast-cards {
+      gap: 15px;
+    }
+
+    .forecast-card {
+      min-width: 110px;
+      min-height: 190px;
+      font-size: 1rem;
+      border-radius: 60px;
+    }
+
+    .forecast-card img {
+      min-width: 55px;
+      min-height: 55px;
+    }
+  }
 </style>
