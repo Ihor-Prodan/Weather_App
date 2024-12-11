@@ -1,6 +1,8 @@
 # Weather App
 
-## [DEMO]([https://ihor-prodan.github.io/Weather_App/])
+## [DEMO](https://ihor-prodan.github.io/Weather_App/)
+
+**Note:** To enhance the user experience, the app requires location permissions to detect your current city and provide weather updates for your area automatically. Please enable geolocation when prompted.
 
 ## Overview
 The **Weather App** is a dynamic web application designed to provide users with up-to-date weather information in an intuitive and visually appealing manner. This project offers real-time weather updates, a detailed forecast, and support for multiple cities. The primary goal of this project is to deliver an engaging user experience with high performance and responsiveness across all devices.
